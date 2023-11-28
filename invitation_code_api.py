@@ -1,9 +1,17 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
+from pluginlab_admin import App
 from typing import List
 import uuid
 
+# Initialize PluginLab Admin SDK
+pluginlab_app = App(
+    secret_key="b695a8c29854c462fdf7e56bad06626f8c31e33c59b0ea687488a17ffa1ae2a9",
+    plugin_id="YOUR_PLUGINLAB_PLUGIN_ID"
+)
+
 app = FastAPI()
+
 
 # 数据库模拟
 users = {}  # 用户数据 {user_id: {"invitations": [invitation_code, ...]}}
