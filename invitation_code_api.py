@@ -7,7 +7,7 @@ import uuid
 # Initialize PluginLab Admin SDK
 pluginlab_app = App(
     secret_key="b695a8c29854c462fdf7e56bad06626f8c31e33c59b0ea687488a17ffa1ae2a9",
-    plugin_id="YOUR_PLUGINLAB_PLUGIN_ID"
+    plugin_id="0452f3fb0f384f4fa4249c7168c6bba9"
 )
 
 app = FastAPI()
