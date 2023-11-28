@@ -1,6 +1,5 @@
 from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
-from pluginlab_admin import App
 from typing import List
 import uuid
 
